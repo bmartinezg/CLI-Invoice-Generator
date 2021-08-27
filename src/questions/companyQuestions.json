@@ -1,0 +1,38 @@
+[
+  {
+    "name": "welcome",
+    "message": "¡Bienvenido al generador de  facturas CLI!"
+  },
+  {
+    "name": "date",
+    "type": "date",
+    "message": "Fecha de factura"
+  },
+  {
+    "name": "companyName",
+    "message": "Nombre de la empresa / autónonomo",
+    "default": ""
+  },
+  {
+    "name": "companyID",
+    "message": "NIF de la empresa / autónonomo",
+    "default": ""
+  },
+  {
+    "name": "companyAdress",
+    "message": "Dirección de la empresa / autónonomo",
+    "default": ""
+  },
+  {
+    "name": "tasksAmount",
+    "type": "number",
+    "message": "Número de funciones realizadas para listar en la factura",
+    "default": 1
+  },
+  {
+    "name": "price",
+    "type": "number",
+    "message": "Precio por hora de las actividades realizadas",
+    "default": 20
+  }
+]

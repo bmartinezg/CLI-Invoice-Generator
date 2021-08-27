@@ -1,0 +1,15 @@
+{
+  "name": "invoice2pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruno Martínez González",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.1.2",
+    "inquirer-date-prompt": "^2.0.1"
+  }
+}
