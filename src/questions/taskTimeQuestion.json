@@ -1,0 +1,6 @@
+{
+  "name": "hours",
+  "type": "number",
+  "message": "Horas empleadas en la tarea",
+  "default": 1
+}

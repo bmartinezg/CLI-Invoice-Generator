@@ -9,19 +9,20 @@
     "message": "Fecha de factura"
   },
   {
+    "name": "invoiceID",
+    "message": "Número de factura"
+  },
+  {
     "name": "companyName",
-    "message": "Nombre de la empresa / autónonomo",
-    "default": ""
+    "message": "Nombre de la empresa / autónonomo"
   },
   {
     "name": "companyID",
-    "message": "NIF de la empresa / autónonomo",
-    "default": ""
+    "message": "NIF de la empresa / autónonomo"
   },
   {
     "name": "companyAdress",
-    "message": "Dirección de la empresa / autónonomo",
-    "default": ""
+    "message": "Dirección de la empresa / autónonomo"
   },
   {
     "name": "tasksAmount",
@@ -34,5 +35,17 @@
     "type": "number",
     "message": "Precio por hora de las actividades realizadas",
     "default": 20
+  },
+  {
+    "name": "iva",
+    "type": "number",
+    "message": "Porcentaje de IVA",
+    "default": 21
+  },
+  {
+    "name": "irpf",
+    "type": "number",
+    "message": "Porcentaje de retención de IRPF",
+    "default": 7
   }
 ]
