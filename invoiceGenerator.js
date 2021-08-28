@@ -2,7 +2,6 @@ const { jsPDF } = require("jspdf")
 const personalData = require('./assets/personalData.json')
 
 const generatePDFInvoice = (USER_DATA) => {
-  console.log(USER_DATA)
   const doc = new jsPDF();
 
   doc.addImage(personalData.logo, "WEBP", 10, 8, 35, 8);
