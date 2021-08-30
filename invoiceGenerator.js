@@ -66,7 +66,7 @@ const generatePDFInvoice = (USER_DATA) => {
   doc.text(personalData.bankAccount, 200, 285, null, null, 'right');
 
   /* Col */
-  doc.save(`invoice-${new Date().getTime()}.pdf`);
+  doc.save(`./invoices/invoice-${new Date().getTime()}.pdf`);
 }
 
 const calcTotal = (USER_DATA) => {
