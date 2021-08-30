@@ -66,7 +66,7 @@ const generatePDFInvoice = (USER_DATA) => {
   doc.text(personalData.bankAccount, 200, 285, null, null, 'right');
 
   /* Col */
-  doc.save("INVOICE.pdf");
+  doc.save(`invoice-${new Date().getTime()}.pdf`);
 }
 
 const calcTotal = (USER_DATA) => {
@@ -77,15 +77,19 @@ const calcTotal = (USER_DATA) => {
 }
 
 const calculateVAT = (USER_DATA) => {
-  return ((100 * USER_DATA.iva) / calcTotal(USER_DATA)).toFixed(2);
+  return ((USER_DATA.iva / 100) * calcTotal(USER_DATA)).toFixed(2);
 }
 
 const calculateIRPF = (USER_DATA) => {
-  return ((100 * USER_DATA.irpf) / calcTotal(USER_DATA)).toFixed(2);
+  return ((USER_DATA.irpf / 100) * calcTotal(USER_DATA)).toFixed(2);
 }
 
 const finalResult = (USER_DATA) => {
-  return (calcTotal(USER_DATA) + calculateVAT(USER_DATA) - calculateIRPF(USER_DATA)).toString() + '€'
+  console.log('calcTotal(USER_DATA) ', calcTotal(USER_DATA) )
+  console.log('calculateVAT(USER_DATA)', calculateVAT(USER_DATA) )
+  console.log('calculateIRPF(USER_DATA)', calculateIRPF(USER_DATA) )
+
+  return (calcTotal(USER_DATA) + parseInt(calculateVAT(USER_DATA))) - parseInt(calculateIRPF(USER_DATA)).toString() + '€'
 }
 
 const formatDate = (value) => {
