@@ -85,10 +85,6 @@ const calculateIRPF = (USER_DATA) => {
 }
 
 const finalResult = (USER_DATA) => {
-  console.log('calcTotal(USER_DATA) ', calcTotal(USER_DATA) )
-  console.log('calculateVAT(USER_DATA)', calculateVAT(USER_DATA) )
-  console.log('calculateIRPF(USER_DATA)', calculateIRPF(USER_DATA) )
-
   return (calcTotal(USER_DATA) + parseInt(calculateVAT(USER_DATA))) - parseInt(calculateIRPF(USER_DATA)).toString() + '€'
 }
 
