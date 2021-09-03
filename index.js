@@ -24,6 +24,7 @@ const generateTaskPrompt = () => {
       name: `description-${index.toString()}`,
       message: `${tasksQuestions.message} ${index + 1}`
     })
+
     tasksPrompQuesitons.push({
       name: `hours-${index.toString()}`,
       message: `${taskTimeQuestion.message} ${index + 1}`
